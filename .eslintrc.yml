@@ -1,0 +1,21 @@
+parser: 'babel-eslint'
+plugins:
+  - prettier
+extends:
+  - prettier
+  - prettier/flowtype
+rules:
+  prettier/prettier:
+    - 2
+    -
+      trailingComma: none
+      singleQuote: true
+      semi: false
+  no-empty-pattern: 0
+  prefer-const: 2
+  prefer-arrow-callback: 2
+  no-unused-vars:
+    - 2
+    -
+      argsIngorePattern: ^_
+      varsIgnorePattern: ^_

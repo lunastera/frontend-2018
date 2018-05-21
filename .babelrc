@@ -1,0 +1,18 @@
+{
+	"env": {
+    "development": {
+      "presets": ["flow", ["env", {"targets": {"chrome": 61} }]]
+    },
+    "production": {
+      "presets": [
+        "flow",
+        [
+          "env",
+          {
+            "modules": false
+          }
+        ]
+      ]
+    }
+  }
+}
